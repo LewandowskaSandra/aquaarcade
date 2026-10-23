@@ -154,7 +154,7 @@ function Index() {
 
               <div className="row g-3">
                 <section className="col-12 col-sm-6 col-lg-12">
-                  <div className="aa-panel p-2 h-100">
+                  <div className="aa-panel p-2 h-full">
                     <h2 className="d-flex align-items-center gap-2 px-2 pt-1 mb-2" style={{ fontWeight: 700, fontSize: "1rem", color: "var(--aa-blue)" }}><Folder size={20} className="aa-star" />Categories</h2>
                     <ul className="list-unstyled m-0">
                       {categories.map(({ label, Icon }, i) => (
@@ -164,7 +164,7 @@ function Index() {
                   </div>
                 </section>
                 <section className="col-12 col-sm-6 col-lg-12">
-                  <div className="aa-panel p-2 h-100">
+                  <div className="aa-panel p-2 h-full">
                     <h2 className="d-flex align-items-center gap-2 px-2 pt-1 mb-2" style={{ fontWeight: 700, fontSize: "1rem", color: "var(--aa-blue)" }}><Monitor size={20} className="aa-icon" />Platforms</h2>
                     <ul className="list-unstyled m-0">
                       {platforms.map((p) => (
@@ -176,7 +176,7 @@ function Index() {
               </div>
 
               <div className="aa-panel p-2 d-none d-lg-block">
-                <img src={bg} alt="" loading="lazy" width={1920} height={1280} className="w-100 rounded-lg" style={{ aspectRatio: "4/3", objectFit: "cover", objectPosition: "left" }} />
+                <img src={bg} alt="" loading="lazy" width={1920} height={1280} className="w-full rounded-lg" style={{ aspectRatio: "4/3", objectFit: "cover", objectPosition: "left" }} />
                 <div className="d-flex align-items-center justify-content-between px-1 pt-2">
                   <p className="mb-0 aa-brand-small" style={{ color: "var(--aa-blue)", lineHeight: 1.2 }}>PLAY.<br />EXPLORE.<br />COLLECT.<br />BELONG.</p>
                   <Globe size={44} className="aa-icon" aria-hidden />
@@ -187,7 +187,7 @@ function Index() {
             <main className="col-12 col-lg-9 d-flex flex-column gap-3">
               <section className="aa-hero" aria-labelledby="hero-title">
                 <img src={hero} alt="Glass game controller splashing in turquoise water in front of a green futuristic city" width={1600} height={832}
-                  className="position-absolute w-100 h-100" style={{ inset: 0, objectFit: "cover", objectPosition: "right center" }} />
+                  className="position-absolute w-full h-full" style={{ inset: 0, objectFit: "cover", objectPosition: "right center" }} />
                 <div className="position-relative p-4 p-md-5 d-flex flex-column gap-3" style={{ maxWidth: 560 }}>
                   <h1 id="hero-title" className="aa-hero-title m-0">YOUR NEXT<br />LEVEL STARTS<br /><em>HERE.</em></h1>
                   <p className="aa-hero-copy m-0">Discover amazing games, from modern hits to timeless classics. Digital worlds, brighter together.</p>
@@ -207,7 +207,7 @@ function Index() {
                   { Icon: Star, cls: "aa-star", t: "RETRO & NEW", d: "All in one place." },
                 ].map(({ Icon, cls, t, d }) => (
                   <div key={t} className="col-12 col-sm-4">
-                    <div className="aa-panel d-flex align-items-center gap-3 px-3 py-3 h-100">
+                    <div className="aa-panel d-flex align-items-center gap-3 px-3 py-3 h-full">
                       <Icon size={36} className={`${cls} shrink-0`} aria-hidden />
                       <div className="min-w-0"><p className="m-0" style={{ fontWeight: 800, color: "var(--aa-blue)", letterSpacing: ".04em" }}>{t}</p><p className="m-0 small">{d}</p></div>
                     </div>
@@ -239,7 +239,7 @@ function Index() {
             </main>
 
             <section className="col-12 col-md-6" aria-labelledby="retro-title">
-              <div className="aa-panel p-3 h-100 d-flex align-items-center gap-3">
+              <div className="aa-panel p-3 h-full d-flex align-items-center gap-3">
                 <img src={consoleImg} alt="Translucent blue handheld retro console" loading="lazy" width={1024} height={768} style={{ width: "48%", objectFit: "contain" }} />
                 <div className="min-w-0">
                   <h2 id="retro-title" className="aa-hero-title m-0" style={{ fontSize: "1.6rem" }}>RETRO<br />CLASSICS</h2>
@@ -250,13 +250,13 @@ function Index() {
             </section>
 
             <section id="blog" className="col-12 col-md-6" aria-labelledby="blog-title">
-              <div className="aa-panel p-3 h-100">
+              <div className="aa-panel p-3 h-full">
                 <div className="d-flex align-items-center justify-content-between mb-2">
                   <h2 id="blog-title" className="aa-heading d-flex align-items-center gap-2 m-0"><FileText size={22} />Latest from our blog</h2>
                   <a href="#blog" className="aa-link">View all <ArrowRight size={16} /></a>
                 </div>
                 <article className="row g-3 align-items-center">
-                  <div className="col-5"><img src={blog} alt="Cozy cottage by a mountain lake" loading="lazy" width={944} height={704} className="w-100 rounded-lg" style={{ aspectRatio: "4/3", objectFit: "cover" }} /></div>
+                  <div className="col-5"><img src={blog} alt="Cozy cottage by a mountain lake" loading="lazy" width={944} height={704} className="w-full rounded-lg" style={{ aspectRatio: "4/3", objectFit: "cover" }} /></div>
                   <div className="col-7">
                     <h3 className="m-0" style={{ fontSize: "1rem", fontWeight: 700 }}>Top 10 Cozy Games to Relax in 2026</h3>
                     <p className="small my-1">Discover the most relaxing games that bring good vibes and beautiful worlds.</p>
