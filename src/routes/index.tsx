@@ -118,7 +118,7 @@ function Index() {
                   <p className="mb-0 small"><a className="aa-link" href="#login">Log in</a> | <a className="aa-link" href="#signup">Sign up</a></p>
                 </div>
               </div>
-              <button className="aa-panel position-relative px-3" aria-label={`Cart, ${cart} items`} onClick={() => toast(`Cart: ${cart} item${cart === 1 ? "" : "s"}`)}>
+              <button className="aa-panel relative px-3" aria-label={`Cart, ${cart} items`} onClick={() => toast(`Cart: ${cart} item${cart === 1 ? "" : "s"}`)}>
                 <ShoppingCart size={30} className="aa-icon" />
                 <span className="aa-badge" aria-live="polite">{cart}</span>
               </button>
@@ -127,7 +127,7 @@ function Index() {
 
           <nav className="aa-nav d-flex align-items-center gap-1 mb-3 overflow-x-auto" aria-label="Main navigation">
             <a href="/" className="aa-nav-link" aria-current="page"><Home size={18} className="aa-icon" />Home</a>
-            <div className="position-relative">
+            <div className="relative">
               <button className="aa-nav-link" aria-expanded={gamesOpen} aria-haspopup="true" onClick={() => setGamesOpen((o) => !o)}>
                 <Gamepad2 size={18} className="aa-icon" />Games<ChevronDown size={16} />
               </button>
@@ -146,10 +146,10 @@ function Index() {
 
           <div className="row g-3">
             <aside className="col-12 col-lg-3 d-flex flex-column gap-3" aria-label="Browse">
-              <form role="search" className="position-relative" onSubmit={(e) => { e.preventDefault(); toast("Search is a demo for now"); }}>
+              <form role="search" className="relative" onSubmit={(e) => { e.preventDefault(); toast("Search is a demo for now"); }}>
                 <label htmlFor="q" className="sr-only">Search games</label>
                 <input id="q" className="aa-input" placeholder="Search games…" type="search" />
-                <button type="submit" aria-label="Search" className="aa-chrome-btn position-absolute" style={{ right: 3, top: 2 }}><Search size={16} /></button>
+                <button type="submit" aria-label="Search" className="aa-chrome-btn absolute" style={{ right: 3, top: 2 }}><Search size={16} /></button>
               </form>
 
               <div className="row g-3">
@@ -187,15 +187,15 @@ function Index() {
             <main className="col-12 col-lg-9 d-flex flex-column gap-3">
               <section className="aa-hero" aria-labelledby="hero-title">
                 <img src={hero} alt="Glass game controller splashing in turquoise water in front of a green futuristic city" width={1600} height={832}
-                  className="position-absolute w-full h-full" style={{ inset: 0, objectFit: "cover", objectPosition: "right center" }} />
-                <div className="position-relative p-4 p-md-5 d-flex flex-column gap-3" style={{ maxWidth: 560 }}>
+                  className="absolute w-full h-full" style={{ inset: 0, objectFit: "cover", objectPosition: "right center" }} />
+                <div className="relative p-4 p-md-5 d-flex flex-column gap-3" style={{ maxWidth: 560 }}>
                   <h1 id="hero-title" className="aa-hero-title m-0">YOUR NEXT<br />LEVEL STARTS<br /><em>HERE.</em></h1>
                   <p className="aa-hero-copy m-0">Discover amazing games, from modern hits to timeless classics. Digital worlds, brighter together.</p>
                   <a href="#featured" className="aa-btn aa-btn-blue align-self-start px-4 py-2" style={{ fontSize: "1.1rem" }}>
                     EXPLORE GAMES <span className="aa-orb"><ArrowRight size={18} /></span>
                   </a>
                 </div>
-                <div className="position-absolute d-flex gap-2" style={{ bottom: 12, left: "50%", transform: "translateX(-50%)" }} aria-hidden>
+                <div className="absolute d-flex gap-2" style={{ bottom: 12, left: "50%", transform: "translateX(-50%)" }} aria-hidden>
                   {[0, 1, 2, 3].map((i) => <span key={i} className={`aa-dot ${i === 0 ? "is-active" : ""}`} />)}
                 </div>
               </section>
